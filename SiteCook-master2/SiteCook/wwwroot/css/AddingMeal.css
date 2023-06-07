@@ -1,0 +1,115 @@
+﻿.chooseImage {
+    background-color: rgba(255, 229.7125393152237, 164.6875101327896, 1);
+    width: 220px;
+    height: 50px;
+    top: 18%;
+    position: absolute;
+    left: 16%;
+    font-size: 18px;
+    transform: translate(-50%, 0);
+}
+
+.selectCategory {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.selectMeal {
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.image {
+    border: 2px solid black;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+.a1 {
+    width: 250px;
+    position: absolute;
+    left: 43%;
+    top: 17%;
+}
+
+.a2 {
+    width: 250px;
+    position: absolute;
+    left: 43%;
+    top: 32%;
+}
+
+.a3 {
+    width: 250px;
+    position: absolute;
+    left: 43%;
+    top: 46%;
+}
+
+.inputIngretients {
+    position: absolute;
+    left: 43%;
+    top: 49%;
+    width: 250px;
+    height: 250px;
+    resize: none;
+    font-size: 18px;
+}
+
+.save {
+    background-color: rgba(255, 229.7125393152237, 164.6875101327896, 1);
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 88%;
+    left: 52%;
+    font-size: 18px;
+    transform: translate(-50%, 0);
+}
+
+.a4 {
+    width: 250px;
+    position: absolute;
+    left: 75%;
+    top: 17%;
+}
+
+.inputName {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    resize: none;
+}
+
+.a5 {
+    width: 250px;
+    position: absolute;
+    left: 75%;
+    top: 32%;
+}
+
+.inputDescripton {
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    width: 250px;
+    height: 363px;
+    font-size: 18px;
+    resize: none;
+}
+

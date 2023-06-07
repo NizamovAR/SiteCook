@@ -1,0 +1,34 @@
+﻿@model Moderator
+@{
+    ViewData["Title"] = "Личный кабинет модератора";
+    Layout = "_ModerLayout";
+}
+<link rel="stylesheet" href="~/css/Private.css" asp-append-version="true" />
+<form asp-action="PrivateAccountModer" method="post">
+    <div class="MImg">
+          <img src="https://3.404content.com/1/76/B8/1138265597082862982/fullsize.jpg" height=400/>
+    </div>
+    
+    <div class="new">
+        <div class="mail">
+            <p class="e205_58">Почта</p>
+            <input required type="text" name="loginOrEmail" value="@Model.Mail"/>
+        </div>
+    <div class="pass">
+         <p class="e205_58">Пароль</p>
+        <input required type="text" name="Password" value="@Model.Password"/>
+        
+    </div>
+    <div class="nik">
+         <p class="e205_58">Ник-нейм</p>
+        <input required type="text" name="Nik" value="@Model.NikName"/>
+    </div>
+    <div class="nik">
+         <p class="e205_58">Дата рождения</p>
+                <input required type="datetime-local" name="Data" value="@Model.DateOfBirth"/>
+    </div>
+    <div class="save">
+        <button class="e205_70" asp-action="SaveChangesUser">Сохранить изменения</button>
+    </div>
+    </div>
+</form>

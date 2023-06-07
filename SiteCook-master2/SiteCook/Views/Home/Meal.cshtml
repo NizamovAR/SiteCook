@@ -1,0 +1,7 @@
+﻿@model Meal
+
+<div>
+    <h2>@Model.NameMeal</h2>
+    @Html.Raw("<img class='recipeImage' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.ImageMeal) + "\" />")
+    <p>@Model.DescriptionMeal</p>
+</div>

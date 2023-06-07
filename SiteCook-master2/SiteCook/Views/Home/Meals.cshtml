@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Meal>
+@{
+    ViewData["Title"] = "Блюда";
+    Layout = "_Layout";
+}
+<div class="text-center">
+    @foreach (var category in Model)
+    {
+
+        @Html.Raw("<img class='recipeImage' src=\"data:image/jpeg;base64," + Convert.ToBase64String(category.ImageMeal) + "\" />")
+        <a class="catName" asp-action="Meals " asp-route-id="@category.IdCategory">@category.NameMeal</a>
+
+    }
+</div>

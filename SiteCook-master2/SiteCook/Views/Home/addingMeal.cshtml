@@ -1,0 +1,43 @@
+﻿@{
+	ViewData["Title"] = "Личный кабинет";
+	Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/AddingMeal.css" asp-append-version="true" />
+<form asp-action="addingMeal" method="post" enctype="multipart/form-data">
+	<body>
+		<div>
+			<div class="image">
+				<img id="uploadingMealImage" />
+			</div>
+			<input required type="file" class="chooseImage d-inline" id="photo-uploader" accept=".png, .jpg, .jpeg" name="photo" />
+			<p class="a1">Выберите категорию</p>
+			<select name="namecateg" class="selectCategory">
+				@using (CookingBookContext db = new CookingBookContext())
+				{
+					@foreach (var item in db.Categories)
+					{
+						<option>@item.NameCategory</option>
+					}
+				}
+			</select>
+			<p class="a2">Выберите блюдо</p>
+			<select class="selectMeal" name="nameMeal">
+				@using (CookingBookContext db = new CookingBookContext())
+				{
+					@foreach (var item in db.Meals)
+					{
+						<option>@item.NameMeal</option>
+					}
+				}
+			</select>
+			<p class="a3">Ингредиенты</p>
+			<textarea class="inputIngretients" name="ing"></textarea>
+			<button type="submit" asp-action="AddRecipe" class="save">Сохранить</button>
+			<p class="a4">Название рецепта</p>
+			<input type="text" class="inputName" name="nameRecipe" />
+			<p class="a5">Описание</p>
+			<textarea class="inputDescripton"name="desc"></textarea>
+		</div>
+	</body>
+</form>
+<script src="~/js/MealAdd.js" asp-append-version="true"></script>
